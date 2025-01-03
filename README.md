@@ -15,7 +15,7 @@ The tool provides 2 output CSV files:
 and one or more visualisation files.
 
 
-## Running aeon using repo
+## Run aeon using repo code
 
 Clone the repo to your local machine and install the requirements in `pyproject.toml` using `uv` (https://docs.astral.sh/uv/).
 
@@ -31,12 +31,12 @@ You should then be able to run aeon from the command line:
 uv run python aeon.py sample_variants.bcf -o my_output
 ```
 
-## Running using the Docker Image
+## Run using Docker
 
-A docker image is available [here](https://hub.docker.com/r/naomiwren/aeon). Within the container you can run aeon like this:
+A docker image is available [here](https://github.com/MHH-Humangenetik/aeon/pkgs/container/aeon). The container can be run directly from the command line:
 
 ```bash
-uv run aeon.py sample_variants.bcf -o my_output
+docker run ghcr.io/mhh-humangenetik/aeon:latest sample_variants.bcf -o my_output
 ```
 
 ## Example usage
